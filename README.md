@@ -1,6 +1,6 @@
 # Python Practice
 
-Ejercicios de práctica manual, dificultad creciente.
+Just practicing, no AI
 
-| # | Tema | Dificultad | Fecha |
+| # | Theme | Diff | Date |
 
