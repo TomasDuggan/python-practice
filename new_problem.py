@@ -10,8 +10,10 @@ def main() -> None:
         print("Use: python new_problem.py <folder-name>  (eg: 001-fibonacci)")
         sys.exit(1)
 
-    name = sys.argv[1]
-    target = Path("problems") / name
+    problems_folder = Path("problems")
+    problems_count = sum(1 for x in problems_folder.iterdir() if x.is_dir())
+    name = f"{problems_count + 1}-{sys.argv[1]}"
+    target = problems_folder / name
 
     if target.exists():
         print(f"Error: {target} already exists.")
